@@ -1171,7 +1171,7 @@ describe Mongoid::Fields do
     end
 
     let(:decimal) do
-      BigDecimal.new("1000000.00")
+      Kernel.BigDecimal("1000000.00")
     end
 
     context "when setting to a big decimal" do

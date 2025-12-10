@@ -66,15 +66,15 @@ describe Mongoid::Persistable::Incrementable do
       context "when providing big decimal values" do
 
         let(:five) do
-          BigDecimal.new("5.0")
+          Kernel.BigDecimal("5.0")
         end
 
         let(:neg_ten) do
-          BigDecimal.new("-10.0")
+          Kernel.BigDecimal("-10.0")
         end
 
         let(:thirty) do
-          BigDecimal.new("30.0")
+          Kernel.BigDecimal("30.0")
         end
 
         let!(:inc) do
@@ -151,15 +151,15 @@ describe Mongoid::Persistable::Incrementable do
       context "when providing big decimal values" do
 
         let(:five) do
-          BigDecimal.new("5.0")
+          Kernel.BigDecimal("5.0")
         end
 
         let(:neg_ten) do
-          BigDecimal.new("-10.0")
+          Kernel.BigDecimal("-10.0")
         end
 
         let(:thirty) do
-          BigDecimal.new("30.0")
+          Kernel.BigDecimal("30.0")
         end
 
         let!(:inc) do

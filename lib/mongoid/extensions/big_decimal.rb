@@ -53,7 +53,8 @@ module Mongoid
         #
         # @since 3.0.0
         def demongoize(object)
-          object && object.numeric? ? ::BigDecimal.new(object.to_s) : nil
+          return nil unless object && object.numeric?
+          Kernel.BigDecimal(object.to_s)
         end
 
         # Mongoize an object of any type to how it's stored in the db as a String.

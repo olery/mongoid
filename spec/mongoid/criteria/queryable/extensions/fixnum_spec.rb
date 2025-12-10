@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Fixnum do
+describe Integer do
 
   describe ".evolve" do
 

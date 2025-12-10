@@ -1,6 +1,8 @@
 require "spec_helper"
 
-describe Bignum do
+TARGET_NUMERIC = defined?(Bignum) ? Bignum : Integer
+
+describe TARGET_NUMERIC do
 
   describe ".evolve" do
 
